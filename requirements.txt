@@ -1,4 +1,5 @@
 backports-abc==0.4
+beautifulsoup4==4.4.1
 cycler==0.10.0
 dask==0.8.2
 decorator==4.0.9
