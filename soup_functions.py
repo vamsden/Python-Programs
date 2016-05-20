@@ -2,9 +2,7 @@ from bs4 import BeautifulSoup
 
 html_doc = """
     <HTML>
-    <HEAD>
-    <TITLE>Your Title Here</TITLE>
-    </HEAD>
+    <HEAD><TITLE>Your Title Here</TITLE></HEAD>
     <BODY BGCOLOR="FFFFFF">
     <CENTER><IMG SRC="clouds.jpg" ALIGN="BOTTOM"> </CENTER>
     <HR>
@@ -40,3 +38,10 @@ print("------------------------------------------------------------------")
 
 for i in body_tag.descendants:
     print(i)
+
+# string function
+head_tag = soup.head
+print(head_tag.string)
+
+# Goes one up the level
+print(head_tag.string.parent)
