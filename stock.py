@@ -16,7 +16,7 @@ stock_data = urllib.request.urlopen(stock_url).read()
 # Decodes to UTF-8 string format
 stock_data_decoded = stock_data.decode("utf-8")
 
-# Search data from 
+# Search data from
 raw_string1 = re.search('meta itemprop="price"', stock_data_decoded)
 start = raw_string1.start()
 end = raw_string1.end() + 30
